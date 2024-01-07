@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VerifyDialog</class>
+ <widget class="QDialog" name="VerifyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">	
+	
+background-image: url(:/pics/Project-Images/QT-verification.jpg);    background-repeat: no-repeat;
+background-position: center;
+
+
+
+
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_backMain">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>350</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	
+background-color: rgb(217, 217, 217);
+border: 1px solid dark blue;
+color: rgb(0, 85, 127);
+
+	border-radius: 8px;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+border: 1px solid black;
+	color: rgb(0, 0, 0);
+	background-color: rgb(147, 147, 147);
+	border-radius: 8px;
+	font: 12pt &quot;Lucida Fax&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>250</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 11pt &quot;Lucida Fax&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Password:</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>150</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 11pt &quot;Lucida Fax&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Username:</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_Vpass">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>280</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 127);
+background-color: rgb(255, 255, 255);
+border-radius: 8px;
+font: 12pt &quot;Lucida Fax&quot;;</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Enter Your Password</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_Vmail">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>190</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 127);
+background-color: rgb(255, 255, 255);
+border-radius: 8px;
+font: 12pt &quot;Lucida Fax&quot;;</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Enter Your Username</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Vlogin">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>350</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	
+background-color: rgb(217, 217, 217);
+border: 1px solid dark blue;
+color: rgb(0, 85, 127);
+
+	border-radius: 8px;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+border: 1px solid black;
+	color: rgb(0, 0, 0);
+	background-color: rgb(147, 147, 147);
+	border-radius: 8px;
+	font: 12pt &quot;Lucida Fax&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

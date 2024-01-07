@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/pics">
+        <file>Project-Images/QT-BG-logo.jpg</file>
+        <file>Project-Images/QT-verification.jpg</file>
+        <file>Project-Images/PLMGV-logo.png</file>
+        <file>Project-Images/QuadTechLogo.png</file>
+    </qresource>
+</RCC>

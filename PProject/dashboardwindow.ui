@@ -1,0 +1,4643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DashboardWindow</class>
+ <widget class="QMainWindow" name="DashboardWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PLMGV-Lab</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>250</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(74, 141, 104);</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_dashBoard">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>310</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	color: white;
+	background-color: rgb(74, 141, 104);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	border-left: 7px solid darkgray;
+	color:black;
+	background-color: rgb(199, 218, 204);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Dashboard</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_borrowForm">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>350</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	color: white;
+	background-color: rgb(74, 141, 104);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	border-left: 7px solid darkgray;
+	color:black;
+	background-color: rgb(199, 218, 204);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Borrowing Form</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_returnedTools">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>390</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	color: white;
+	background-color: rgb(74, 141, 104);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	border-left: 7px solid darkgray;
+	color:black;
+	background-color: rgb(199, 218, 204);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Return Tools</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_lmbs">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>250</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+font: 700 14pt &quot;Sitka Text&quot;;</string>
+     </property>
+     <property name="text">
+      <string>PLMGV-Lab</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_logOut">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>730</y>
+       <width>250</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	text-align:center;
+	border:none;
+	color: rgb(217, 217, 217);
+	background-color: rgb(74, 141, 104);
+	font: 600 15pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	text-align:center;
+	border:none;
+	color: darkred;
+	background-color: rgb(74, 141, 104);
+	font: 600 15pt &quot;Lucida Fax&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Log-out</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_studentInfo_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>540</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	color: white;
+	background-color: rgb(74, 141, 104);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	border-left: 7px solid darkgray;
+	color:black;
+	background-color: rgb(199, 218, 204);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Student Info:</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_toolsInfo">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>500</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	color: white;
+	background-color: rgb(74, 141, 104);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	text-align:left;
+	padding-left:15px;
+	border:none;
+	border-left: 7px solid darkgray;
+	color:black;
+	background-color: rgb(199, 218, 204);
+	font: 600 13pt &quot;Lucida Fax&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Tools Info:</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>211</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: transparent;
+    background-image: url(:/pics/Project-Images/PLMGV-logo.png);
+    background-position: center; /* Optional: Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/pics/Project-Images/DASH.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>1150</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_dashboard">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QWidget" name="widget_dashboard" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1150</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(38, 38, 38);</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_21">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>220</y>
+         <width>315</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="available_dboard">
+        <item>
+         <widget class="QLabel" name="label_availableACSupply_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: AC Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableAlligatorClips_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: Alligator Clips</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableBreadboard_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: Breadboard</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableDCSupply_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: DC Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableDigitalMultimeter_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: Multimeter</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableMicroController_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: Micro Controller</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableMultiTapTransformer_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: Multi-Tap Transformer</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableOscilloscope_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: Oscilloscope</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableVariablePowerSupply_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>Available: Variable Power Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_22">
+       <property name="geometry">
+        <rect>
+         <x>840</x>
+         <y>220</y>
+         <width>288</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="in_Use_dboard">
+        <item>
+         <widget class="QLabel" name="label_inUseACSupply_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: AC Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_inUseAlligatorClips_dboard">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: Alligator Clips</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_inUseBreadboard_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: Breadboard</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_inUseDCSupply_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: DC Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_inUseDigitalMultimeter_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: Multimeter</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_inUseMicroController_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: Micro Controller</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_inUseMultiTapTransformer_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: Multi-Tap Transformer</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_inUseOscilloscope_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: Oscilloscope</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_inUseVariablePowerSupply_dboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>In Use: Variable Power Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_ac">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>220</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_alligator">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>277</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_bboard">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>333</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_dc">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>389</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_multi">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>445</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_control">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>502</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_transform">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>558</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_osci">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>614</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_vp">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>670</y>
+         <width>480</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+text-align: center;
+border: 2px rgb(158, 158, 158);
+border-radius: 13px;
+font: 700 16pt &quot;Palatino Linotype&quot;;
+	background-color: rgb(158, 158, 158);
+color: black;
+qproperty-alignment: AlignCenter;
+}
+
+QProgressBar::chunk {
+text-align: center;
+border-radius: 13px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+stop: 0 #378B29 , stop: 1 #74D680);
+font: 700 16pt &quot;Palatino Linotype&quot;;
+color: black;
+qproperty-alignment: AlignCenter;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>140</y>
+         <width>441</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 20pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+       </property>
+       <property name="text">
+        <string>List of Available and In-Use Tools</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_dashboardDate">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>40</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 16pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>441</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 italic 20pt &quot;Palatino Linotype&quot;;
+color:white;
+
+</string>
+       </property>
+       <property name="text">
+        <string>Dashboard:</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_borrowingForm">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(199, 218, 204);</string>
+     </property>
+     <widget class="QWidget" name="widget_borrowForm" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1150</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>170</y>
+         <width>531</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Student's Name: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_studentNameBF">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Student Number: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_studentNumberBF">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Year Level &amp; Section:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_yearSectionBF">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>340</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Professor: </string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>460</y>
+         <width>181</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">text-align:left;
+padding-left:15px;
+font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Student's ID</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_receiveIDBF">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Receive</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_studentNumberSearchBF">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>98</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    padding: 25px;
+    border: 2px black;
+	background-color: rgb(0, 0, 0);
+	border-radius: 3px;
+	color:white;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit::placeholder 
+{
+color: white; }
+
+                           </string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Search Student Number</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>99</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Enter Student Number:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_timeRefresh">
+       <property name="geometry">
+        <rect>
+         <x>1050</x>
+         <y>100</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background-color: rgb(217, 217, 217);
+	border: 2px solid black;
+	color: black;
+	font: 10pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	border: 2px solid black;
+	color: rgb(0, 0, 0);
+	background-color: rgb(147, 147, 147);
+	font: 10pt &quot;Lucida Fax&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>REFRESH</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_subjectCourseBF">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>300</y>
+         <width>401</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>420</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Tools to Borrow:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>420</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>This is required:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_submitBF">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>610</y>
+         <width>181</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	
+border: 1px solid black;
+background-color: rgb(74, 141, 104);
+color: black;
+
+	border-radius: 8px;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+border: 1px solid white;
+	color: white;
+	background-color: black;
+	border-radius: 8px;
+	font: 12pt &quot;Lucida Fax&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>100</y>
+         <width>361</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Date:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit_borrowDateBF">
+          <property name="styleSheet">
+           <string notr="true">QDateEdit {
+font: 700 12pt &quot;Palatino Linotype&quot;;
+text-align: left;
+padding-right: 15px;
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+
+QDateEdit:focus {
+font: 700 12pt &quot;Palatino Linotype&quot;;
+   border-bottom: 2px solid black;
+}
+                           </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Time: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_borrowTimeBF">
+          <property name="styleSheet">
+           <string notr="true">QTimeEdit {
+font: 700 12pt &quot;Palatino Linotype&quot;;
+text-align: left;
+padding-right: 15px;
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+
+QTimeEdit:focus {
+font: 700 12pt &quot;Palatino Linotype&quot;;
+   border-bottom: 2px solid black;
+}
+                           </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>460</y>
+         <width>231</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="checkBox_acSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>AC Supply (1pc)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_alligatorClips">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Alligator Clips (1 pair)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_breadBoard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Breadboard (1pc)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_dcSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>DC Supply (1pc)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_digitalMultimeter">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Digital Multimeter (1pc)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_mcontrol">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Micro Controller (1pc)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_MTransformer">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Multi-tap Transformer (1pc)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_oscilloscope">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Oscilloscope (1pc)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_vpSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Variable Power Supply (1pc)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton_studentNumSearch">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>98</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background-color: rgb(217, 217, 217);
+	border: 2px solid black;
+	color: black;
+	font: 10pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	border: 2px solid black;
+	color: rgb(0, 0, 0);
+	background-color: rgb(147, 147, 147);
+	font: 10pt &quot;Lucida Fax&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>SEARCH</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>20</y>
+         <width>271</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 24pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Borrowing Form</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>300</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Subject Course: </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_professorBF">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>340</y>
+         <width>451</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>420</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Available:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_8">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>460</y>
+         <width>81</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="available_bf">
+        <item>
+         <widget class="QLabel" name="label_availableACSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableAlligatorClips">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableBreadboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableDCSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableDigitalMultimeter">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableMicroController">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableMultiTapTransformer">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableOscilloscope">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_availableVariablePowerSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_returnedTools">
+     <widget class="QWidget" name="widget_return" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1150</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(199, 218, 204);
+</string>
+      </property>
+      <widget class="QComboBox" name="comboBox_Controller">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>544</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>174</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_acSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>AC Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_alligatorClips">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Alligator Clips</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_breadBoard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Breadboard</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_dcSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>DC Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_multimeter">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Digital Multimeter</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_mController">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Micro Controller</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_mTransformer">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Multi-Tap Transoformer</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_oscilloscope">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Oscilloscope</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_vpSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Variable Power Supply</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QComboBox" name="comboBox_bb">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>436</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>10</y>
+         <width>251</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 24pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Return Tools</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_16">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>481</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_22">
+        <item>
+         <widget class="QLabel" name="label_32">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Return Date:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit_returnDate">
+          <property name="styleSheet">
+           <string notr="true">QDateEdit {
+font: 700 12pt &quot;Palatino Linotype&quot;;
+text-align: left;
+padding-right: 15px;
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+
+QDateEdit:focus {
+font: 700 12pt &quot;Palatino Linotype&quot;;
+   border-bottom: 2px solid black;
+}
+                           </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_33">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Return Time:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_returnTime">
+          <property name="styleSheet">
+           <string notr="true">QTimeEdit {
+font: 700 12pt &quot;Palatino Linotype&quot;;
+text-align: left;
+padding-right: 15px;
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+
+QTimeEdit:focus {
+font: 700 12pt &quot;Palatino Linotype&quot;;
+   border-bottom: 2px solid black;
+}
+                           </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_17">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>360</y>
+         <width>159</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="ReturnedStatus_2">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_acCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_alligatorCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_bbCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_dcCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_multimeterCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_controllerCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_transformerCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_osciCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_vpSupplyCondition">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {font: 700 11pt &quot;Palatino Linotype&quot;;
+	background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QComboBox" name="comboBox_oscilloscope">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>620</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_dc">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>472</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_18">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>481</width>
+         <height>148</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_23">
+          <item>
+           <widget class="QLabel" name="label_38">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Student's Name: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_studentNameBF_2">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="QLabel" name="label_39">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Student Number: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_studentNumberBF_2">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <widget class="QLabel" name="label_40">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Year Level &amp; Section:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_yearSectionBF_2">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_26">
+            <item>
+             <widget class="QLabel" name="label_34">
+              <property name="styleSheet">
+               <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Subject Course: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_subjectCourseBF_2">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_27">
+            <item>
+             <widget class="QLabel" name="label_36">
+              <property name="styleSheet">
+               <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Professor: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_professorBF_2">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>333</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Return Status:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_multimeter">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>508</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QTableView" name="tableView_borrowedTools">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>150</y>
+         <width>491</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableView {
+	background-color: rgb(217, 217, 217); 
+	alternate-background-color: rgb(107, 138, 182);
+	color: rgb(0, 0, 0);
+	gridline-color: #CCCCCC;
+	background-color: rgb(217, 217, 217);
+	selection-color: black;
+	border: 2px solid #CCCCCC;
+   }
+
+QTableView::item {	
+	background-color: rgb(217, 217, 217);
+	color: black;
+	padding: 5px;
+	border: none;}
+QTableView::item:selected {	
+	background-color: rgb(130, 180, 152);
+	color:black;
+}
+
+QHeaderView::section {
+	background-color: rgb(74, 141, 104);
+	color: #333333;
+	padding: 5px;
+	border: none;
+}
+
+QHeaderView::section:checked {
+	background-color: rgb(130, 180, 152);
+}
+QTableView::indicator:checked {
+background-color: #0055FF;
+border: none;
+}
+QTableView::indicator:unchecked {
+background-color: #FFFFFF;
+border: 2px solid #CCCCCC;
+}
+QTableView::indicator:indeterminate {
+background-color: #0055FF;
+border: none;
+}
+QTableView::indicator:checked:hover, 
+QTableView::indicator:unchecked:hover, QTableView::indicator:indeterminate:hover {
+background-color: #66AFFF;
+                                     }</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_submitBF_2">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>730</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	
+border: 1px solid black;
+background-color: rgb(74, 141, 104);
+color: black;
+
+	border-radius: 8px;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+border: 1px solid white;
+	color: white;
+	background-color: black;
+	border-radius: 8px;
+	font: 12pt &quot;Lucida Fax&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_alligator">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>400</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>90</y>
+         <width>241</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 24pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Borrowed Table:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_19">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>360</y>
+         <width>131</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QLabel" name="label_BSACSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_BSAlligatorClips">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_BSBreadboard">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_BSDCSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_BSMultimeter">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_BSController">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_BSTransformer">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_BSoscilloscope">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_BSvpSupply">
+          <property name="styleSheet">
+           <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_20">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>481</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_28">
+        <item>
+         <widget class="QLabel" name="label_35">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Borrowed Date:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_borrowDateRT">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+font: 700 12pt &quot;Palatino Linotype&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_37">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Palatino Linotype&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Borrowed Time:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_borrowTimeRT">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+font: 700 12pt &quot;Palatino Linotype&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 2px solid black;
+}
+                           </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QComboBox" name="comboBox_vpSupply">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>660</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_ac">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>364</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>333</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Items to Borrow:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_Transformer">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>580</y>
+         <width>151</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+	font: 700 10pt &quot;Palatino Linotype&quot;;
+	color:black;
+	
+	background-color: rgb(217, 217, 217);
+	border-radius: 3px;
+    padding: 5px;
+}
+  
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 2px;
+border-left-color: black;
+border-left-style: solid;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+background-color: rgb(228, 184, 173);                           
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nothing To Return</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Defective</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Defective</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>333</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 11pt &quot;Palatino Linotype&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Borrow Status:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_refreshTReturn">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>120</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background-color: rgb(217, 217, 217);
+	border: 2px solid black;
+	color: black;
+	font: 10pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	border: 2px solid black;
+	color: rgb(0, 0, 0);
+	background-color: rgb(147, 147, 147);
+	font: 10pt &quot;Lucida Fax&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>REFRESH</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_toolsInfo">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(199, 218, 204);</string>
+     </property>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1150</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(199, 218, 204);</string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_toolsInfo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1150</width>
+         <height>800</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	font: 700 12pt &quot;Lucida Fax&quot;;
+	
+background-color: rgb(199, 218, 204);
+border: 1px rgb(128, 166, 160);</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>60</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 700 22pt &quot;Palatino Linotype&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Tools' Information</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>681</width>
+          <height>641</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black;
+border: 2px solid black;
+background-color: rgb(0, 0, 0);
+</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <widget class="QWidget" name="layoutWidget_23">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>90</y>
+           <width>241</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="available_dboard_2">
+          <item>
+           <widget class="QLabel" name="label_availableACSupply_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>AC Supply</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_availableAlligatorClips_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>Alligator Clips</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_availableBreadboard_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>Breadboard</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_availableDCSupply_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>DC Supply</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_availableDigitalMultimeter_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>Multimeter</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_availableMicroController_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>Micro Controller</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_availableMultiTapTransformer_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>Multi-Tap Transformer</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_availableOscilloscope_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>Oscilloscope</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_availableVariablePowerSupply_dboard_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 14pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>Variable Power Supply</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_12">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>90</y>
+           <width>111</width>
+           <height>531</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dAC">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dALC">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dBB">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dDC">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dMULTI">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dCONTROL">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dTRANSFORM">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dOSCILLOSCOPE">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_dVP">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+	font: 12pt &quot;Lucida Fax&quot;;
+color:white;
+}
+
+                           </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_24">
+         <property name="geometry">
+          <rect>
+           <x>530</x>
+           <y>80</y>
+           <width>31</width>
+           <height>521</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <item>
+           <widget class="QPushButton" name="pushButton_minusAC_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusAlligator_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusBboard_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusDC_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusMulti_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusControl_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusTransform_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusOscilloscope_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusVP_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_13">
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>80</y>
+           <width>31</width>
+           <height>521</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <item>
+           <widget class="QPushButton" name="pushButton_minusAC">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusAlligator">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusBboard">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusDC">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusMulti">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusControl">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusTransform">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusOscilloscope">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_minusVP">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+    
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	font: 700 14pt &quot;Lucida Fax&quot;;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_27">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>30</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 700 16pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+         </property>
+         <property name="text">
+          <string>Tool's Name</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_28">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>30</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 700 16pt &quot;Palatino Linotype&quot;;
+color:white;</string>
+         </property>
+         <property name="text">
+          <string>Quantity</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_studentsInfo">
+     <widget class="QWidget" name="widget_studentInfo" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1150</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(199, 218, 204);</string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_studentInformation">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>1131</width>
+         <height>780</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	font: 700 12pt &quot;Lucida Fax&quot;;
+	
+border: 1px rgb(128, 166, 160);
+background-color: rgb(199, 218, 204);</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>10</y>
+          <width>311</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 700 22pt &quot;Palatino Linotype&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Student's Information</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>1111</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(87, 112, 108);
+border-radius: 5px;</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QTableView" name="tableView_studentInfo">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>1091</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView {
+	background-color: rgb(217, 217, 217); 
+	alternate-background-color: rgb(107, 138, 182);
+	color: rgb(0, 0, 0);
+	gridline-color: #CCCCCC;
+	background-color: rgb(217, 217, 217);
+	selection-color: black;
+	border: 2px solid #CCCCCC;
+   }
+
+QTableView::item {	
+	background-color: rgb(217, 217, 217);
+	color: black;
+	padding: 5px;
+	border: none;}
+QTableView::item:selected {	
+	background-color: rgb(130, 180, 152);
+	color:black;
+}
+
+QHeaderView::section {
+	background-color: rgb(74, 141, 104);
+	color: #333333;
+	padding: 5px;
+	border: none;
+}
+
+QHeaderView::section:checked {
+	background-color: rgb(130, 180, 152);
+}
+QTableView::indicator:checked {
+background-color: #0055FF;
+border: none;
+}
+QTableView::indicator:unchecked {
+background-color: #FFFFFF;
+border: 2px solid #CCCCCC;
+}
+QTableView::indicator:indeterminate {
+background-color: #0055FF;
+border: none;
+}
+QTableView::indicator:checked:hover, 
+QTableView::indicator:unchecked:hover, QTableView::indicator:indeterminate:hover {
+background-color: #66AFFF;
+                                     }</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>13</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 700 16pt &quot;Palatino Linotype&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Table of Student's Information:</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>10</y>
+           <width>321</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QPushButton" name="pushButton_show2022">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(217, 217, 217);</string>
+            </property>
+            <property name="text">
+             <string>2024</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_show2021">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(217, 217, 217);</string>
+            </property>
+            <property name="text">
+             <string>2023</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_show2020">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(217, 217, 217);</string>
+            </property>
+            <property name="text">
+             <string>2022</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_show2019">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(217, 217, 217);</string>
+            </property>
+            <property name="text">
+             <string>2021</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>100</y>
+          <width>171</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black;
+border: 2px solid black;
+</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <widget class="QPushButton" name="pushButton_deleteStudent">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>151</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background-color: rgb(87, 112, 108);
+	border: 1px solid dark blue;
+	color: white;
+	border-radius: 4px;
+	font: 700 12pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	border: 1px solid black;
+	color: white;
+	background-color: rgb(147, 147, 147);
+	border-radius: 4px;
+	font: 700 12pt &quot;Lucida Fax&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>DELETE</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_appendStudent">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>151</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background-color: rgb(87, 112, 108);
+	border: 1px solid dark blue;
+	color: white;
+	border-radius: 4px;
+	font: 700 12pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	border: 1px solid black;
+	color: white;
+	background-color: rgb(147, 147, 147);
+	border-radius: 4px;
+	font: 700 12pt &quot;Lucida Fax&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>SAVE</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_clearStudent">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>151</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background-color: rgb(87, 112, 108);
+	border: 1px solid dark blue;
+	color: white;
+	border-radius: 4px;
+	font: 700 12pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	border: 1px solid black;
+	color: white;
+	background-color: rgb(147, 147, 147);
+	border-radius: 4px;
+	font: 700 12pt &quot;Lucida Fax&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>CLEAR</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>60</y>
+          <width>711</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox { border: 2px solid black; }</string>
+        </property>
+        <property name="title">
+         <string>BASIC INFORMATION:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>251</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>SUBJECT COURSE PER SEM:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_10">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>200</y>
+           <width>661</width>
+           <height>86</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>1ST SEM:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_semOneSO">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_21">
+              <property name="text">
+               <string>2ND SEM:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_semTwoSO">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>PROFESSOR:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_professorSO">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_11">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>30</y>
+           <width>661</width>
+           <height>120</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="id_lbl">
+              <property name="text">
+               <string>STUDENT NAME:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_studentNameSO">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="surname_lbl">
+              <property name="text">
+               <string>STUDENT NUMBER:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_studentNumberSO">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>YEAR LEVEL &amp; SECTION:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_yrBlockSO">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+	background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+	font: 12pt &quot;Lucida Fax&quot;;
+}
+QLineEdit:focus {
+   border-bottom: 3px solid black;
+}
+                           </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_generateSubjectCourse">
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+{
+	background-color: rgb(87, 112, 108);
+	border: 1px solid dark blue;
+	color: white;
+	border-radius: 4px;
+	font: 700 12pt &quot;Lucida Fax&quot;;
+}
+
+QPushButton:Hover 
+{
+	border: 1px solid black;
+	color: white;
+	background-color: rgb(147, 147, 147);
+	border-radius: 4px;
+	font: 700 12pt &quot;Lucida Fax&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Generate Other Info.</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
